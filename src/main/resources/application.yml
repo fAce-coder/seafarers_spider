@@ -1,0 +1,14 @@
+#配置Druid数据源为Postgresql
+spring:
+  datasource:
+    druid:
+      driver-class-name: org.postgresql.Driver
+      url: jdbc:postgresql://172.17.0.2:5432/test
+      username: postgres
+      password: 123456
+
+#配置MyBatis-Plus的日志,用于测试运行结果，上线运行时要关闭
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
